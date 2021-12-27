@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Mon profil</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let user of users">
+  <ion-card color="primary">  
+    <ion-item color="primary">
+  <ion-label><h2>{{ user.email }}</h2>
+    <h2>{{ user.pseudo }}</h2></ion-label>
+  </ion-item>
+</ion-card>
+  <ion-button expand="block" color="danger" (click)="logout()">Déconnexion</ion-button>
+
+
+  
+</ion-content>
+ 

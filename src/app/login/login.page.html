@@ -1,0 +1,19 @@
+
+
+<ion-content>
+  <img src="https://firebasestorage.googleapis.com/v0/b/noteapp-825ee.appspot.com/o/logo.svg?alt=media&token=f11321cb-3596-4720-9902-f09d4a2f32dd">
+  <div class="wrapper" *ngIf="!connected">
+  <div class='inputs'>
+      <ion-input type="email" [(ngModel)]="dataUser.email"  placeholder="Email"></ion-input>
+   
+
+      <ion-input type="password" [(ngModel)]="dataUser.password" placeholder="Mot de passe"></ion-input>
+    </div>
+    <div class='buttons'>
+    <ion-button expand="block"   (click)="login()">Connexion</ion-button>
+   <p>OU</p>
+    <ion-button expand="block" (click)="toSignUp()">Inscription</ion-button>
+  </div>
+  </div>
+  
+</ion-content>
